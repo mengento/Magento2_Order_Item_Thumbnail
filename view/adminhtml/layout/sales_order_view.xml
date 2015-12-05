@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order_items">
+            <action method="setTemplate">
+                <argument name="template" translate="true" xsi:type="string">order/view/items.phtml</argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="order_items">
+            <block class="Mengento\Thumbnail\Block\Adminhtml\Items\Column\Thumbnail" name="column_thumbnail" template="items/column/thumbnail.phtml" group="column"/>
+        </referenceBlock>
+    </body>
+</page>
